@@ -1,4 +1,4 @@
-use tokenizers::{Encoding, Tokenizer};
+use tokenizers::{tokenizer::Tokenizer, Encoding};
 
 use crate::ChunkSizer;
 
