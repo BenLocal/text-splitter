@@ -24,7 +24,7 @@ fn num_tokens_with_overflow(encoding: &Encoding, pad_id: Option<u32>) -> usize {
     base + overflow
 }
 
-impl ChunkSizer for &Tokenizer {
+impl ChunkSizer for &tokenizers::tokenizer::Tokenizer {
     /// Returns the number of tokens in a given text after tokenization.
     ///
     /// # Panics
@@ -41,7 +41,7 @@ impl ChunkSizer for &Tokenizer {
     }
 }
 
-impl ChunkSizer for Tokenizer {
+impl ChunkSizer for tokenizers::tokenizer::Tokenizer {
     /// Returns the number of tokens in a given text after tokenization.
     ///
     /// # Panics
