@@ -72,7 +72,7 @@ rust_tokenizers = { version = "8", optional = true }
 strum = { version = "0.27", features = ["derive"] }
 thiserror = "2.0.11"
 tiktoken-rs = { version = "0.6", optional = true }
-tokenizers = { version = "0.21", default-features = false, optional = true }
+tokenizers = { git = "https://github.com/BenLocal/tokenizers.git", branch = "api-from-env", default-features = false, optional = true }
 tree-sitter = { version = "0.25", optional = true }
 
 [dev-dependencies]
@@ -85,7 +85,7 @@ fake = "4"
 insta = { version = "1.42", features = ["glob", "yaml"] }
 more-asserts = "0.3"
 rayon = "1.10"
-tokenizers = { version = "0.21", default-features = false, features = [
+tokenizers = { git = "https://github.com/BenLocal/tokenizers.git", branch = "api-from-env", default-features = false, features = [
     "onig",
     "http",
 ] }
